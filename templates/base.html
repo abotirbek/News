@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Navbar Example</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    nav {
+      background-color: #222;
+      padding: 15px 30px;
+    }
+
+    .navbar {
+      list-style: none;
+      display: flex;
+      justify-content: center; /* Centers navbar items */
+      gap: 30px;
+    }
+
+    .navbar li a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    .navbar li a:hover {
+      color: #00bcd4;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul class="navbar">
+      <li><a href="/">Home</a></li>
+      <li><a href="create">Publishing</a></li>
+      <li><a href="#">Contacts</a></li>
+    </ul>
+  </nav>
+
+  {% block content %}
+  {% endblock %}
+
+</body>
+</html>

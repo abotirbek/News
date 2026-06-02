@@ -139,7 +139,9 @@
             </div>
 
             <div class="bottom-row">
-                <a href="#" class="btn">Read more</a>
+                <a href="{% url 'detail' new.pk %}" class="btn">Read more</a>
+                <a href="{% url 'update' new.pk %}" class="btn">Edit</a>
+                <a href="{% url 'delete' new.pk %}" class="btn">Delete</a>
             </div>
 
         </div>

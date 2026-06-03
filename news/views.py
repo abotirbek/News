@@ -22,8 +22,7 @@ def create_news(request):
 
 def get_new(request, pk=None):
     new = News.objects.get(pk=pk)
-    context = {'new':new}
-    return render(request, 'news/detail.html',context)
+    return render(request, 'news/detail.html',{'new':new})
 
 def update_new(request, pk):
     new = News.objects.get(pk=pk)
